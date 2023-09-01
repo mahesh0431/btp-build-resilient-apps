@@ -33,7 +33,7 @@ steps:
     cloudFoundry:
       credentialsId: 'cf-credential'
       apiEndpoint: 'https://api.cf.eu10-004.hana.ondemand.com/' # for example, https://api.cf.eu10.hana.ondemand.com
-      org: 'tfe-dev-eu10-004' # your cloud foundry org name
+      org: 'Technical Field Enablement_build-resilient-apps-tzsnqv56' # your cloud foundry org name
       space: 'dev' # your cloud foundry space name
     mtaDeployParameters: '-f --version-rule ALL'
 
