@@ -1,6 +1,5 @@
 # Project configuration
 general:
-  pipeline: 'sap-cloud-sdk' # this line is mandatory
   buildTool: 'mta' # or 'npm'
 
 # Stages configuration

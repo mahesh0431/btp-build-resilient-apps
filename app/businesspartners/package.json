@@ -21,7 +21,7 @@
   "devDependencies": {
     "@sap/html5-repo-mock": "^2.1.5",
     "@sap/ui5-builder-webide-extension": "1.1.x",
-    "@sap/ux-specification": "latest",
+    "@sap/ux-specification": "^1.102.14",
     "@sap/ux-ui5-tooling": "1",
     "@ui5/cli": "2.10.3",
     "@ui5/fs": "2.0.6",
