@@ -6,16 +6,15 @@
   "license": "UNLICENSED",
   "private": true,
   "engines": {
-    "node": "^16.15"
+    "node": "^18"
   },
   "config": {
     "imagePrefix": "<replace with your registry/user>"
   },
   "dependencies": {
-    "@sap-cloud-sdk/connectivity": "^3.0.0",
-    "@sap-cloud-sdk/core": "^1.54.0",
-    "@sap-cloud-sdk/http-client": "^3.0.0",
-    "@sap-cloud-sdk/util": "^3.0.1",
+    "@sap-cloud-sdk/connectivity": "^3",
+    "@sap-cloud-sdk/http-client": "^3",
+    "@sap-cloud-sdk/util": "^3",
     "@sap/cds": "6.8.4",
     "@sap/cds-dk" : "7.0.2",
     "@sap/cloud-sdk-vdm-business-partner-service": "^2.1.0",
@@ -39,7 +38,7 @@
     "@sap/eslint-plugin-cds": "^2.6.1",
     "@sap/eslint-plugin-ui5-jsdocs": "2.0.x",
     "@sap/hdi-deploy": "4.6.1",
-    "@sap/html5-repo-mock": "2.1.1",
+    "@sap/html5-repo-mock": "2.1.5",
     "@sap/ui5-builder-webide-extension": "^1.1.9",
     "@sap/ux-specification": "^1.102.14",
     "@sapui5/ts-types": "1.117.x",
