@@ -31,7 +31,7 @@ steps:
 
   cloudFoundryDeploy: # only relevant, if you set the cloudFoundryDeploy parameter in the Release stage to true
     cloudFoundry:
-      credentialsId: 'cf-credential'
+      credentialsId: 'webhookcredential'
       apiEndpoint: 'https://api.cf.eu10-004.hana.ondemand.com/' # for example, https://api.cf.eu10.hana.ondemand.com
       org: 'Technical Field Enablement_build-resilient-apps-tzsnqv56' # your cloud foundry org name
       space: 'dev' # your cloud foundry space name
