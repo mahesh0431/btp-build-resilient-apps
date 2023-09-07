@@ -1,5 +1,6 @@
 # Project configuration
 general:
+  pipeline: 'sap-cloud-sdk' # this line is mandatory
   buildTool: 'mta' # or 'npm'
 
 # Stages configuration
@@ -8,7 +9,7 @@ stages:
     npmExecuteLint: true # true, if you want to run a lint check that verifies the syntax of your JavaScript code
 
   Additional Unit Tests:
-    npmExecuteScripts: false
+    npmExecuteScripts: true
 
   Release:
     cloudFoundryDeploy: true # true, if you want to deploy to Cloud Foundry. If you set this parameter to true, the CloudFoundryDeploy step is mandatory
@@ -27,13 +28,12 @@ steps:
     buildTarget: 'CF'
     extensions: 'live.mtaext' # live.mtaext for BTP Live landscape or trial.mtaext for BTP Trial Account
     mtaBuildTool: 'cloudMbt'
-    verbose:  true
 
   cloudFoundryDeploy: # only relevant, if you set the cloudFoundryDeploy parameter in the Release stage to true
     cloudFoundry:
-      credentialsId: 'webhookcredential'
+      credentialsId: 'cf-credential'
       apiEndpoint: 'https://api.cf.eu10-004.hana.ondemand.com/' # for example, https://api.cf.eu10.hana.ondemand.com
-      org: 'Technical Field Enablement_build-resilient-apps-tzsnqv56' # your cloud foundry org name
+      org: 'tfe-dev-eu10-004' # your cloud foundry org name
       space: 'dev' # your cloud foundry space name
     mtaDeployParameters: '-f --version-rule ALL'
 
