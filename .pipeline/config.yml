@@ -2,7 +2,7 @@
 general:
   buildTool: 'mta' # or 'npm'
 service:
-  buildToolVersion: 'MBTJ11N14'
+  buildToolVersion: 'MBTJ8N18'
 
 # Stages configuration
 stages:
