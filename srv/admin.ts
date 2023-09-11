@@ -176,4 +176,3 @@ class AdminService extends ApplicationService {
 }
 
 module.exports = { AdminService }
-// nice
