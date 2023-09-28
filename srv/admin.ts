@@ -33,7 +33,7 @@ class AdminService extends ApplicationService {
   }
 
   private delegateQuery = async (req: Request) => {
-    return this.run(req.query)
+    return this.bupaSrv.run(req.query)
   }
 
   private handleBusinessPartnerCreated = async (msg: Request) => {
