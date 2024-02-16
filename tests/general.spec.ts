@@ -237,7 +237,7 @@ describe('Test changes in S/4 through mocks', function () {
     const payload = { BusinessPartner: newBupa.BusinessPartner }
     messaging.emit('tfe/bp/em/ce/sap/s4/beh/businesspartner/v1/BusinessPartner/Changed/v1', payload)
     console.log('<< event emitted', payload)
-    await new Promise((resolve) => setTimeout(resolve, 2000)) // make sure that the service can process the event
+    await new Promise((resolve) => setTimeout(resolve, 2000)) // make sure that the service can process the event nice
     const { data: dataGet, status: statusGet } = (await GET(`admin/BusinessPartnerVerification?$expand=addresses`, AUTH)) as AxiosResponse
     expect(statusGet).to.be.equal(200)
     expect(dataGet.value).to.have.lengthOf(1)
