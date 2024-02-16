@@ -217,7 +217,7 @@ describe('Test changes in S/4 through mocks', function () {
   })
 
   it('Update Business Partner Address', async () => {
-    //const { data: dataGet1, status: statusGet1 } = (await GET(`admin/BusinessPartnerVerification?$expand=addresses`, AUTH)) as AxiosResponse nice
+    //const { data: dataGet1, status: statusGet1 } = (await GET(`admin/BusinessPartnerVerification?$expand=addresses`, AUTH)) as AxiosResponse
 
     for (const address of newBupa.to_BusinessPartnerAddress) {
       for (const key of Object.keys(address)) {
